@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Blog Personal</h1>
+        <div class="user-info">
+            <span id="user-greeting"></span>
+            <button id="logout-btn">Cerrar Sesión</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="create-post-section">
+            <h2>Crear Nueva Publicación</h2>
+            <form id="post-form">
+                <input type="hidden" id="edit-post-id"> 
+                <input type="text" id="post-title" placeholder="Título de la publicación" required>
+                <textarea id="post-content" rows="4" placeholder="Escribe tu contenido aquí..." required></textarea>
+                <button type="submit" id="submit-post-btn">Publicar</button>
+                <button type="button" id="cancel-edit-btn" style="display: none;">Cancelar Edición</button>
+            </form>
+        </section>
+
+        <section class="posts-section">
+            <h2>Publicaciones</h2>
+            <div id="posts-container">
+                </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
